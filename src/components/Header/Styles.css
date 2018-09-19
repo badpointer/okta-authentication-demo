@@ -3,4 +3,28 @@
     height: 50px;
     padding: 10px;
     color: white;
+    display: flex;
+  }
+
+  .header-content-icon {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .header-content-title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-content-status {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
   }
