@@ -10,7 +10,10 @@ class Protected extends Component {
     async componentDidMount() {
         const claims = await this.props.auth.getUser();
         const userInfo = JSON.stringify(claims,null,4);
+        const auth = {Authorization: 'Bearer ' + await this.props.auth.getAccessToken()}
+        console.log(auth);
         this.setState({userInfo});
+
     }
 
   render() {

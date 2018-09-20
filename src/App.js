@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Home from './components/pages/Home';
 import Login from './components/Auth/Login';
 import Protected from './components/pages/Protected';
+import HelloWorldApi from './components/pages/HelloWorldApi';
 
 
 
@@ -36,6 +37,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/login" render={() => <Login baseUrl={config.baseUrl}/>} />
             <SecureRoute  path="/protected" component={Protected} />
+            <SecureRoute path='/hello' component={HelloWorldApi} />
             <Route path="/implicit/callback" component={ImplicitCallback} />
           </Security>
         </div>
