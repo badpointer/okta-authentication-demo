@@ -3,11 +3,12 @@ const OktaJwtVerifier = require('@okta/jwt-verifier');
 let cors = require('cors');
 
 const oktaJwtVerifier = new OktaJwtVerifier({
-    issuer: '{YOUR_BASE_URL}}',
+    issuer: 'https://{yourOktaBaseUrl}.oktapreview.com/oauth2/default',
     assertClaims: {
       aud: 'api://default',
     },
-});
+  });
+  
 
 /**
  * A simple middleware that asserts valid access tokens and sends 401 responses

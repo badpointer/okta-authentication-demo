@@ -3,7 +3,6 @@
     height: 50px;
     padding: 10px;
     color: white;
-    display: flex;
   }
 
   .header-content-icon {
@@ -28,3 +27,13 @@
     justify-content: flex-end;
     padding-right: 10px;
   }
+
+
+  .typo {
+    padding-top: 12px;
+  }
+
+  .body-container {
+    line-height: 1.50;
+  }
+  
